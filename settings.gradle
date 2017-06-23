@@ -1,0 +1,5 @@
+rootProject.name = 'spring_oauth_sso'
+
+include 'authorization_server'
+include 'resource_server'
+

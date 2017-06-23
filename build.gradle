@@ -1,0 +1,4 @@
+subprojects {
+    group 'spring_oauth_sso'
+    version '1.0-SNAPSHOT'
+}
