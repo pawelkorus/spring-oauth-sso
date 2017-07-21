@@ -13,7 +13,6 @@ import javax.inject.Inject;
 
 @Configuration
 @EnableAuthorizationServer
-@EnableResourceServer
 public class AuthorizatonServerConfig extends AuthorizationServerConfigurerAdapter {
 
     @Inject
