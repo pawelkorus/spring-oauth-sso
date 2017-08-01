@@ -1,7 +1,5 @@
 # Spring OAuth2 SSO
 
-Demo project integrating Spring OAuth2 Authorization Server, Spring OAuth2 Resource Server with OAuth2 based SSO.
-
 ## Resource Server
 
 Sample resource server listens on port `8700` and defines public accessible resources: `/home`, `/samplePage` 
