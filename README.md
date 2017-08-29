@@ -10,12 +10,7 @@ in case both are defined
 
 ## Authorization Server
 
-OAuth 2 specification states that authorization endpoint is used to interact with the resource owner and obtain an 
-authorization grant. Before this grant is issued resource owner has to be identified, but OAuth specification does not 
-define any specific authentication method. For the purpose of this demo HTTP Basic Auth is used for securing 
-authorization endpoint. In this demo, which uses Spring, authorization endpoint is secured using
-Spring Web Security and defines in memory user details service with two users
-and enables HTTP Basic Auth (`WebSecurityConfig`).
+For the purpose of this demo Spring Web Security is used to secure authorization endpoint by HTTP Basic Auth. See [WebSecurityConfig](https://github.com/pawelkorus/spring-oauth-sso/blob/master/authorization_server/src/main/java/sample/springoauthsso/config/WebSecurityConfig.java) for details.
 
 ## SSO and Authorization Code Grant
 
