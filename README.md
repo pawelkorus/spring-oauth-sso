@@ -28,11 +28,11 @@ Configuration for such flow is rather basic and well documented.
 
 ## Password Grant
 
-Password grant type should be used in case of trusted clients like native apps. In this case client collects
+Password grant type should be used in case of trusted clients like native apps which can securely collect
 user credentials and exchange them for access token.
 
-To support both authrorization code grant and password grant at the same time is more complicated. This demo project was created to 
-present sample configuration for such scenario.
+Configuration for systtem that supports both authrorization code grant and password grant at the same time is more complicated. This demo project was 
+created to present sample configuration for such scenario.
 
 On the authentication server if you want to use the same authentication manager for both types of grant you need to
 expose AuthenticationManager bean (see [WebSecurityConfig::authenticationManagerBean](https://github.com/pawelkorus/spring-oauth-sso/blob/master/authorization_server/src/main/java/sample/springoauthsso/config/WebSecurityConfig.java)) and the use it when configurin OAuth (see `configure` method that takes `AuthorizationServerEndpointsConfigurer` [AuthorizationServerConfig](https://github.com/pawelkorus/spring-oauth-sso/blob/master/authorization_server/src/main/java/sample/springoauthsso/config/AuthorizatonServerConfig.java)
